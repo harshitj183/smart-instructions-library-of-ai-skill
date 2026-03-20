@@ -1,15 +1,17 @@
 {
-  "name": "@harshitj183/ai-skill",
+  "name": "ai-skill",
   "version": "1.0.0",
   "description": "The Ultimate 17 Mega-Skills & 8 Roles Library for AI Agents (Cursor, Claude Code, Copilot, Antigravity)",
   "main": "bin/cli.js",
   "bin": {
-    "smart-ai-skills": "bin/cli.js",
-    "smart-instructions": "bin/cli.js"
+    "ai-skill": "bin/cli.js"
   },
   "scripts": {
     "start": "node bin/cli.js",
     "test": "echo \"Ready to supercharge your AI workflows!\""
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "ai",
@@ -25,16 +27,16 @@
     "llm",
     "typescript"
   ],
-  "author": "Harshit  <harshitj183@gmail.com>",
+  "author": "Harshit Jaiswal <harshitj183@gmail.com>",
   "license": "MIT",
   "engines": {
     "node": ">=14.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/harshitj183/smart-instructions-library-of-ai-skill.git"
+    "url": "https://github.com/harshitj183/ai-skill.git"
   },
   "bugs": {
-    "url": "https://github.com/harshitj183/smart-instructions-library-of-ai-skill/issues"
+    "url": "https://github.com/harshitj183/ai-skill/issues"
   }
 }
