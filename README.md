@@ -25,7 +25,7 @@ Run our zero-dependency official installer inside any project directory (Next.js
 npx @harshitj183/smart-instructions-library-of-ai-skill init
 ```
 
-> **Note for Cursor IDE users:** Rename the copied `SKILL.md` to `.cursorrules` to automatically enforce global project rules across all your IDE chats.
+> **Note for Cursor IDE users:** Move `smart-instructions/SKILL.md` to your project root and rename it to `.cursorrules` to automatically enforce global project rules across all your IDE chats.
 
 ---
 

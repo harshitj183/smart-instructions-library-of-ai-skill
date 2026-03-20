@@ -33,13 +33,19 @@ function copySync(src, dest) {
     }
 }
 
-const targetRolesDir = path.join(targetDir, 'roles');
-const targetSkillsDir = path.join(targetDir, 'skills');
-const targetSkillMd = path.join(targetDir, 'SKILL.md');
+const targetDirBase = path.join(targetDir, 'smart-instructions');
+
+if (!fs.existsSync(targetDirBase)) {
+    fs.mkdirSync(targetDirBase, { recursive: true });
+}
+
+const targetRolesDir = path.join(targetDirBase, 'roles');
+const targetSkillsDir = path.join(targetDirBase, 'skills');
+const targetSkillMd = path.join(targetDirBase, 'SKILL.md');
 const gitignorePath = path.join(targetDir, '.gitignore');
 
 try {
-    console.log(`${colors.blue}[+] Copying Master Rules (SKILL.md)...${colors.reset}`);
+    console.log(`${colors.blue}[+] Initializing 'smart-instructions' workspace...${colors.reset}`);
     if (fs.existsSync(path.join(sourceDir, 'SKILL.md'))) {
         fs.copyFileSync(path.join(sourceDir, 'SKILL.md'), targetSkillMd);
     } else {
@@ -53,7 +59,7 @@ try {
     copySync(path.join(sourceDir, 'skills'), targetSkillsDir);
     
     console.log(`${colors.blue}[+] Securing source control (.gitignore)...${colors.reset}`);
-    const ignoreRules = "\n\n# Smart AI Skills Library (Context Only)\nSKILL.md\n.cursorrules\nroles/\nskills/\n";
+    const ignoreRules = "\n\n# Smart AI Skills Library (Context Only)\nsmart-instructions/\n";
     if (fs.existsSync(gitignorePath)) {
         const currentIgnore = fs.readFileSync(gitignorePath, 'utf8');
         if (!currentIgnore.includes('# Smart AI Skills Library')) {
@@ -65,8 +71,8 @@ try {
         console.log(`    ${colors.cyan}-> Created new .gitignore file${colors.reset}`);
     }
 
-    console.log(`\n${colors.bright}${colors.green}[Success] Smart AI Skills installed in your workspace.${colors.reset}`);
-    console.log(`${colors.yellow}Notice for Cursor IDE:${colors.reset} File Explorer -> Rename 'SKILL.md' to '.cursorrules'\n`);
+    console.log(`\n${colors.bright}${colors.green}[Success] The 'smart-instructions' folder has been added to your project!${colors.reset}`);
+    console.log(`${colors.yellow}Notice for Cursor IDE:${colors.reset} Move 'smart-instructions/SKILL.md' to the root of your project and rename it to '.cursorrules'\n`);
     
 } catch (error) {
     console.error(`\n${colors.red}[Error] Failed to construct library structure: ${error.message}${colors.reset}\n`);
