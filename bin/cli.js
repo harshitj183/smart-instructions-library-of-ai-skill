@@ -23,7 +23,7 @@ const targetDirBase = path.join(targetDir, 'smart-instructions');
 program
   .name('ai-skills')
   .description('The Ultimate AI Skill Library CLI')
-  .version('2.2.2');
+  .version('2.2.3');
 
 program
   .command('init')
