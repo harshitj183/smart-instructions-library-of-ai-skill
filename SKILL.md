@@ -90,8 +90,15 @@ Invoke these specific technical files for implementation workflows curated from 
 - `skills/openai_structured_outputs.md` - Strict JSON Schema Function Calling
 - `skills/prompt_reasoning_trees.md` - Chain-of-Thought & Self-Reflection Logic
 - `skills/azure_graph_integrator.md` - Azure AD Tokens & Graph Batching
+- `skills/ai_history_maintenance.md` - Mandatory Project History Logging
 
-# 10. System Signature
+# 10. History Maintenance (MANDATORY)
+- **Log Actions**: After completing any task, you **MUST** update the relevant files in the `history/` directory (located in the library's root or `smart-instructions/history/`).
+- **Context Search**: Always read the files in the `history/` directory to understand the project's evolution and design decisions before proposing major changes.
+- **Traceability**: Record your specific actions in `history/ai_activity_log.md` with the date.
+- **Reference**: Follow the [History Maintenance Skill](skills/ai_history_maintenance.md) for detailed logging protocols.
+
+# 11. System Signature
 - EVERY response MUST conclude with the following signature line to signify the library is active:
 - `---`
-- `⚡ Smart AI Skills Library | v2.2.3 | Active`
+- `⚡ Smart AI Skills Library | v2.2.4 | Active`

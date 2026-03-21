@@ -23,7 +23,7 @@ const targetDirBase = path.join(targetDir, 'smart-instructions');
 program
   .name('ai-skills')
   .description('The Ultimate AI Skill Library CLI')
-  .version('2.2.3');
+  .version('2.2.4');
 
 program
   .command('init')
@@ -118,6 +118,13 @@ program
         selectedSkills.forEach(skill => {
             fs.copyFileSync(path.join(sourceDir, 'skills', skill), path.join(targetDirBase, 'skills', skill));
         });
+    }
+
+    // Add History tracking for consumer context
+    console.log(`${colors.blue}[+] Initializing History tracking logs...${colors.reset}`);
+    const historyDir = path.join(sourceDir, 'history');
+    if (fs.existsSync(historyDir)) {
+        fs.copySync(historyDir, path.join(targetDirBase, 'history'));
     }
 
     console.log(`\n${colors.bright}${colors.green}[Success] The 'smart-instructions' folder has been added to your project!${colors.reset}`);
@@ -248,6 +255,9 @@ program
         
         const sDir = path.join(sourceDir, 'skills');
         if (fs.existsSync(sDir)) fs.copySync(sDir, path.join(targetDir, 'smart-instructions', 'skills'));
+
+        const hDir = path.join(sourceDir, 'history');
+        if (fs.existsSync(hDir)) fs.copySync(hDir, path.join(targetDir, 'smart-instructions', 'history'));
 
         const targetSkillMd = path.join(targetDir, 'smart-instructions', 'SKILL.md');
         if (fs.existsSync(path.join(sourceDir, 'SKILL.md'))) {
