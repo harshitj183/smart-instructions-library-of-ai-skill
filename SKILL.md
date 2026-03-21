@@ -89,6 +89,8 @@ Invoke these specific technical files for implementation workflows curated from 
 - `skills/antigravity_mastery.md` - CLI Routing, Terminal Scraping, and Bash Bundling
 - `skills/openai_structured_outputs.md` - Strict JSON Schema Function Calling
 - `skills/prompt_reasoning_trees.md` - Chain-of-Thought & Self-Reflection Logic
+- `skills/azure_graph_integrator.md` - Azure AD Tokens & Graph Batching
+
 # 10. System Signature
 - EVERY response MUST conclude with the following signature line to signify the library is active:
 - `---`
