@@ -65,24 +65,97 @@ Give your AI absolute technical dominance over specific frameworks.
 
 ## <img src="https://cdn.simpleicons.org/github" width="24" align="center" /> Usage Across AI Platforms
 
-You can natively feed this library into major LLM workspace interfaces:
+Run the installer once in your project root, then configure your preferred AI tool:
+
+```bash
+npx @harshitj183/ai-skills init
+```
+
+This places all files inside `smart-instructions/` in your project. Your `.gitignore` is automatically updated.
+
+---
 
 ### <img src="https://cdn.simpleicons.org/visualstudiocode" width="18" align="center" /> 1. Cursor IDE
-- **Globally:** Run the `npx` command, then rename `SKILL.md` to `.cursorrules`.
-- **Surgically:** Type `@` in chat and select what you need.  
-  Example Prompt: *"@frontend_expert.md @react_best_practices.md implement a new dashboard navigation."*
+Rename `smart-instructions/SKILL.md` to `.cursorrules` at your project root. Every Cursor chat will automatically follow the rules.
+```
+mv smart-instructions/SKILL.md .cursorrules
+```
+Or reference individual skills surgically:
+> *"@react_best_practices.md implement a new dashboard."*
 
-### <img src="https://cdn.simpleicons.org/anthropic" width="18" align="center" /> 2. Claude Code (Anthropic CLI)
-- Put this library in your root folder. Tell Claude Code: *"Load `SKILL.md` as your core directive."*
+---
 
-### <img src="https://cdn.simpleicons.org/google" width="18" align="center" /> 3. Gemini CLI / Antigravity
-- Instruct the Antigravity agent: *"Read `SKILL.md` and act according to the Roles inside."*
+### <img src="https://cdn.simpleicons.org/anthropic" width="18" align="center" /> 2. Claude Code (CLI)
+Claude Code auto-reads `CLAUDE.md` from your root. Copy the contents:
+```bash
+cp smart-instructions/SKILL.md CLAUDE.md
+```
+Or tell Claude directly: *"Read `smart-instructions/SKILL.md` as your core directive."*
+
+---
+
+### <img src="https://cdn.simpleicons.org/openai" width="18" align="center" /> 3. ChatGPT (Web / Custom GPT)
+**Option A — Custom Instructions:**
+- Go to Settings → Custom Instructions → paste contents of `SKILL.md`
+
+**Option B — Project Knowledge (ChatGPT Plus):**
+- Create a new Project → Upload `SKILL.md` and any skill files you need
+
+**Option C — Chat Upload:**
+- Attach `SKILL.md` directly to your conversation as a file
+
+---
 
 ### <img src="https://cdn.simpleicons.org/githubcopilot" width="18" align="center" /> 4. GitHub Copilot (VS Code)
-- Copilot chat utilizes active tabs. Keep `azure_graph_integrator.md` open in a read-only tab, and ask: *"#file:azure_graph_integrator.md build a new AD token script."*
+Copy instructions to the Copilot-specific file:
+```bash
+cp smart-instructions/SKILL.md .github/copilot-instructions.md
+```
+Or reference in chat: *"#file:smart-instructions/react_best_practices.md refactor this component."*
 
-### <img src="https://cdn.simpleicons.org/openai" width="18" align="center" /> 5. ChatGPT / Claude Web (Pro)
-- Upload `SKILL.md` into standard "Custom Instructions" / "Project Knowledge", and attach individual mega-skill files alongside your main prompt.
+---
+
+### <img src="https://cdn.simpleicons.org/google" width="18" align="center" /> 5. Gemini / Antigravity (Google)
+Tell Antigravity: *"Read `smart-instructions/SKILL.md` and act according to the Roles inside."*
+Antigravity automatically detects skill files in your workspace.
+
+---
+
+### <img src="https://cdn.simpleicons.org/codium" width="18" align="center" /> 6. Windsurf IDE (Codeium)
+Windsurf supports `.windsurfrules` file:
+```bash
+cp smart-instructions/SKILL.md .windsurfrules
+```
+
+---
+
+### <img src="https://cdn.simpleicons.org/zedindustries" width="18" align="center" /> 7. Zed Editor
+Add to Zed's AI assistant context:
+- Settings → Assistant → System Prompt → paste `SKILL.md` contents
+
+---
+
+### 8. Cline / Continue.dev (VS Code Extensions)
+Place the skill files in `.clinerules` or `.continuerules`:
+```bash
+cp smart-instructions/SKILL.md .clinerules
+```
+For Continue.dev, add to `config.json` under `systemMessage`.
+
+---
+
+### 9. Aider (Terminal AI)
+```bash
+aider --read smart-instructions/SKILL.md
+```
+
+---
+
+### 10. Any LLM API (OpenAI, Groq, Mistral, Llama)
+Paste `SKILL.md` content as your `system` message in the API call:
+```javascript
+{ role: "system", content: fs.readFileSync("smart-instructions/SKILL.md", "utf8") }
+```
 
 ---
 
