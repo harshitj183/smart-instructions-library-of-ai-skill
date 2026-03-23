@@ -77,9 +77,11 @@ Give your AI absolute technical dominance over specific frameworks.
 
 ## 📚 Professional Documentation
 
-For deep dives into the library's power, please exploration our documentation folder:
-- **[System Architecture](docs/architecture.md)**: How the 17 Mega-Skills are structured.
-- **[CLI Power User Guide](docs/cli-guide.md)**: Getting the most out of `init`, `update`, and `create`.
+Visit our full documentation folder for a deep dive into every feature:
+- **[System Architecture](docs/architecture.md)**: Technical design and hierarchical roles.
+- **[CLI Power User Guide](docs/cli-guide.md)**: Speeding up your workflow with `init`, `update`, and `create`.
+- **[AI History System](docs/history-system.md)**: Why and how your AI should track its actions.
+- **[Contribution Guide](docs/contribution-guide.md)**: Help us grow the world's best AI skill library.
 
 ---
 
@@ -196,5 +198,16 @@ Paste `SKILL.md` content as your `system` message in the API call:
 ## Open Source & Community
 
 We are actively maintaining this library to continuously fuse the latest breakthroughs from top tech teams into single mega-skills. Found a massive repo with a great deployment guide? Compression is welcome! PRs are open.
+
+---
+
+## 👨‍💻 Connect & Follow
+
+Stay updated with the latest AI skills and architectural breakthroughs:
+
+- **Follow me on GitHub**: [@harshitj183](https://github.com/harshitj183)
+- **Check out my other projects**: [Harshit's Repositories](https://github.com/harshitj183?tab=repositories)
+
+---
 
 **License:** MIT
