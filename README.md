@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/hero.png" width="100%" alt="AI Skills Library Hero" />
+  <img src="assets/hero.png" width="850" alt="AI Skills Library Hero" />
   <br />
   <img src="https://cdn.simpleicons.org/openai/000000/ffffff" width="60" alt="AI Icon" />
   <h1>Smart Instructions Library of AI Skill</h1>
@@ -27,7 +27,9 @@ Our interactive CLI module gives you absolute control over what skills are deplo
 npx @harshitj183/ai-skills <command>
 ```
 
-<img src="assets/init_demo.png" width="100%" alt="CLI Init Demo" />
+<p align="center">
+  <img src="assets/init_demo.png" width="700" alt="CLI Init Demo" />
+</p>
 
 ### Available Commands:
 1. **`init`** – Installs the full library quietly by default (perfect for letting your AI agent select skills dynamically).
@@ -85,7 +87,9 @@ For deep dives into the library's power, please exploration our documentation fo
 
 Version 2.2.5 introduces a built-in History tracking system. When you initialize the library, it creates a private `history/` folder in your project that allows AI agents to maintain a timeline of their actions, achievements, and technical decisions.
 
-<img src="assets/history_preview.png" width="100%" alt="AI History Tracking Preview" />
+<p align="center">
+  <img src="assets/history_preview.png" width="750" alt="AI History Tracking Preview" />
+</p>
 
 - **`ai_activity_log.md`**: Tracks every task performed by AI.
 - **`project_timeline.md`**: High-level roadmap achievements.

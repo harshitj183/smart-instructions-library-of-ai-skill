@@ -11,7 +11,9 @@ npx @harshitj183/ai-skills init -i
 - **Silent Mode**: `npx @harshitj183/ai-skills init` (Quickest way to 17 Mega-Skills).
 - **Manual Filter**: `npx @harshitj183/ai-skills init -r backend_expert.md -s postgres_optimization.md`.
 
-![Init Demo](../assets/init_demo.png)
+<p align="center">
+  <img src="../assets/init_demo.png" width="650" alt="Init Demo" />
+</p>
 
 ## 2. **`configure`** (The IDE Bridge)
 This command auto-detects what IDE you are using (Cursor, VS Code, Windsurf, Claude Code) and writes the appropriate configuration file (`.cursorrules`, `CLAUDE.md`, etc.).
@@ -26,7 +28,9 @@ Quickly create a new, perfectly structured Mega-Skill or Master Role. This scaff
 npx @harshitj183/ai-skills create my-custom-skill
 ```
 
-![Create Demo](../assets/custom_create_mockup.png)
+<p align="center">
+  <img src="../assets/custom_create_mockup.png" width="650" alt="Create Demo" />
+</p>
 
 ---
 *Maintained by: AI Skills History System*

@@ -2,7 +2,9 @@
 
 The Smart AI Skills Library is built on a hierarchical architecture that allows AI agents to scale their technical competence across millions of lines of code without getting overwhelmed.
 
-![Architecture Overview](../assets/architecture.png)
+<p align="center">
+  <img src="../assets/architecture.png" width="750" alt="Architecture Overview" />
+</p>
 
 ## 1. The Core Controller (`SKILL.md`)
 At the heart of every project is the `SKILL.md` master rulebook. It acts as the "Brain" of the library, enforcing:
