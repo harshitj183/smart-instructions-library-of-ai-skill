@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="assets/hero.png" width="850" alt="AI Skills Library Hero" />
+  <img src="assets/banner.png" width="850" alt="AI Skills CLI Dashboard" />
   <br />
-  <img src="https://cdn.simpleicons.org/openai/000000/ffffff" width="60" alt="AI Icon" />
+  <img src="assets/logo.png" width="60" alt="Smart AI Skills Logo" />
   <h1>Smart Instructions Library of AI Skill</h1>
 
   <p>
