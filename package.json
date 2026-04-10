@@ -1,6 +1,6 @@
 {
   "name": "@harshitj183/ai-skills",
-  "version": "2.2.7",
+  "version": "2.2.8",
   "description": "The Ultimate 18 Mega-Skills & 8 Roles Library for AI Agents (Cursor, Claude Code, Copilot, Antigravity) with AI History Tracking",
   "main": "index.js",
   "repository": {
@@ -14,8 +14,20 @@
     "mcp",
     "instructions"
   ],
-  "author": "Smart AI Team",
+  "author": "harshitj183",
   "license": "MIT",
+  "files": [
+    "skills/",
+    "roles/",
+    "registry/",
+    "index.js",
+    "SKILL.md",
+    "README.md",
+    "history/CONTEXT.md"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "scripts": {
     "welcome": "python scripts/welcome.py",
     "validate": "python tests/validate_skills.py"
