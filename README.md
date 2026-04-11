@@ -8,6 +8,7 @@
     <a href="https://www.npmjs.com/package/@harshitj183/ai-skills"><img src="https://img.shields.io/npm/v/@harshitj183/ai-skills.svg?style=for-the-badge&color=blue" alt="npm version"></a>
     <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" alt="License: MIT"></a>
     <a href="http://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge" alt="PRs Welcome"></a>
+    <a href="#"><img src="https://img.shields.io/badge/Maintained%20by-Antigravity%20AI-orange?style=for-the-badge" alt="Maintained by Antigravity"></a>
   </p>
 
   <p><em>The ultimate repository of compressed, high-fidelity AI developer skills.</em></p>
